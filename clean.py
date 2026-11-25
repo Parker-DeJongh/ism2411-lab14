@@ -1,3 +1,18 @@
+#I had ChatGPT help me understand how to use some of the pandas functions and understand how to read the terminal.
+
+# Reflection
+# 1. The most ambiguous decision was whether to drop or keep rows with missing
+#values. I dropped rows missing order_id or order_date since those fields 
+#seem necessary to identify and track an order. I filled missing quantity_sold
+#values with the mean so I could keep those rows. The additional information 
+#that I would want with real data is to know whay that data and infromation is missing.
+
+# 2. I added comments to explain my decisions and reasoning for each step of the cleaning process.
+
+# 3. The most surprising thing was that quantity_sold had a maximum of 9999,
+#even though the median was only 3. This looked like a placeholder or data
+#entry error. I also noticed negative unit prices and revenue, which may
+#represent returns or adjustments and should be investigated.
 
 print("--- Exercise 1 ---")
 
